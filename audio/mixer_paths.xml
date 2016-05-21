@@ -259,8 +259,8 @@
     </path>
 
     <path name="speaker-mic">
-        <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <path name="adc3" />
+        <ctl name="ADC3 Volume" value="16" />
         <ctl name="DEC4 Volume" value="90" />
     </path>
 
@@ -274,8 +274,8 @@
     </path>
 
     <path name="handset-mic">
-        <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <path name="adc3" />
+        <ctl name="ADC3 Volume" value="16" />
         <ctl name="DEC4 Volume" value="84" />
     </path>
 
@@ -396,8 +396,8 @@
     </path>
 
     <path name="voip-main-mic-comm">
-        <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <path name="adc3" />
+        <ctl name="ADC3 Volume" value="16" />
         <ctl name="DEC4 Volume" value="90" />
     </path>
 
@@ -437,8 +437,8 @@
     </path>
 
     <path name="voice-rec-mic">
-        <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <path name="adc3" />
+        <ctl name="ADC3 Volume" value="16" />
         <ctl name="DEC4 Volume" value="84" />
     </path>
 
@@ -481,8 +481,8 @@
     </path>
 
     <path name="dmic-endfire">
-        <path name="adc1" />
-        <ctl name="ADC1 Volume" value="13" />
+        <path name="adc3" />
+        <ctl name="ADC3 Volume" value="13" />
         <ctl name="DEC4 Volume" value="84" />
     </path>
 
@@ -548,7 +548,7 @@
     </path>
 
     <path name="voice-tty-vco-handset-mic">
-        <path name="adc1" />
+        <path name="adc3" />
     </path>
 
     <path name="play-fm">
