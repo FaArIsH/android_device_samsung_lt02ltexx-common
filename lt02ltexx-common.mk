@@ -21,8 +21,8 @@ $(call inherit-product-if-exists, vendor/samsung/lt02ltexx-common/lt02ltexx-comm
 DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltexx-common/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := large
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
