@@ -8,7 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SerranoRIL \
+    ro.telephony.ril_class=lt02lteRil \
     ro.ril.telephony.mqanelements=6 \
     persist.radio.add_power_save=1
 
