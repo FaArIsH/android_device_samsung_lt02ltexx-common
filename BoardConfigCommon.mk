@@ -70,5 +70,8 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/lt02ltexx-common/ril/
 
+# Dex
+WITH_DEXPREOPT := true
+
 # CMHW
 BOARD_HARDWARE_CLASS := device/samsung/lt02ltexx-common/cmhw
