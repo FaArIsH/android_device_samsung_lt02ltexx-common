@@ -245,16 +245,6 @@ on post-fs-data
     chown system system /sys/class/sec/led/led_blink
     chown system system /sys/class/sec/led/led_lowpower
 
-    # NFC_BROADCOM
-    chmod 0600 /dev/bcm2079x
-    chown nfc nfc /dev/bcm2079x
-    mkdir /data/nfc
-    mkdir /data/nfc/param
-    chmod 0770 /data/nfc
-    chmod 0770 /data/nfc/param
-    chown nfc nfc /data/nfc
-    chown nfc nfc /data/nfc/param
-
     # MDNIE
     chown system system  /sys/class/mdnie/mdnie/lcdtype
     chown system system  /sys/class/mdnie/mdnie/lcd_power
@@ -380,13 +370,6 @@ on post-fs-data
     # Panel color temperature
     chmod 0660 /sys/class/lcd/panel/panel_colors
     chown system system /sys/class/lcd/panel/panel_colors
-
-    # Backlight notification
-    chown system system /sys/class/misc/backlightnotification/blink_control
-    chown system system /sys/class/misc/backlightnotification/enabled
-    chown system system /sys/class/misc/backlightnotification/led_count
-    chown system system /sys/class/misc/backlightnotification/notification_led
-    chown system system /sys/class/misc/backlightnotification/notification_led_mask
 
     # PCC
     chown system system /sys/devices/virtual/graphics/fb0/rgb
