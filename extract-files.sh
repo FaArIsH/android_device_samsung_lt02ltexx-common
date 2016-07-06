@@ -24,7 +24,7 @@ function extract() {
 }
 
 
-BASE=../../../vendor/samsung/lt02ltexx-common/proprietary
+BASE=../../../vendor/samsung/wilcoxltexx/proprietary
 rm -rf $BASE/*
 
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary

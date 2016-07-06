@@ -38,9 +38,9 @@
     <string-array translatable="false" name="networkAttributes">
         <item>"wifi,1,1,1,-1,true"</item>
         <item>"mobile,0,0,0,-1,true"</item>
-        <item>"mobile_mms,2,0,2,240000,true"</item>
+        <item>"mobile_mms,2,0,2,60000,true"</item>
         <item>"mobile_supl,3,0,2,60000,true"</item>
-        <item>"mobile_dun,4,0,2,-1,true"</item>
+        <item>"mobile_dun,4,0,2,60000,true"</item>
         <item>"mobile_hipri,5,0,3,60000,true"</item>
         <item>"bluetooth,7,7,2,-1,true"</item>
     </string-array>
@@ -83,6 +83,7 @@
         <item>1</item>
         <item>4</item>
         <item>5</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
@@ -166,7 +167,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
+    <integer name="config_deviceHardwareKeys">71</integer>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -180,7 +181,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">7</integer>
+    <integer name="config_deviceHardwareWakeKeys">65</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
@@ -279,37 +280,15 @@
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
-    <bool name="config_lidControlsSleep">false</bool>
+    <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- Ultrasound support for Mic/speaker path -->
-    <!-- Whether the default microphone audio source supports near-ultrasound frequencies
-         (range of 18 - 21 kHz). -->
-    <bool name="config_supportMicNearUltrasound">false</bool>
-    <!-- Whether the default speaker audio output path supports near-ultrasound frequencies
-         (range of 18 - 21 kHz). -->
-    <bool name="config_supportSpeakerNearUltrasound">false</bool>
+    <!-- Defines the system property to set for performance profile xe: sys.cpu.modes. Leave it
+         blank if the device do not support performance profiles -->
+    <string name="config_perf_profile_prop" translatable="false">sys.perf.profile</string>
 
-    <!-- Flag indicating if device supports EAP SIM, AKA, AKA' -->
-    <bool name="config_eap_sim_based_auth_supported">false</bool>
-
-    <!-- Whether to enable Hardware FLP overlay which allows Hardware FLP to be
-         replaced by an app at run-time. When disabled, only the
-         config_hardwareFlpPackageName package will be searched for Hardware Flp,
-         otherwise packages whose signature matches the signatures of
-         config_locationProviderPackageNames will be searched, and the service
-         with the highest version number will be picked. Anyone who wants to
-         disable the overlay mechanism can set it to false.
-         -->
-    <bool name="config_enableHardwareFlpOverlay" translatable="false">false</bool>
-
-    <!-- Older rotation sensors are not setting event.timestamp correctly. Setting to
-         true will use SystemClock.elapsedRealtimeNanos() to set timestamp. -->
-    <bool name="config_useSystemClockforRotationSensor">true</bool>
-
-    <!-- Indicate whether to allow the device to suspend when the screen is off
-         due to the proximity sensor.  This resource should only be set to true
-         if the sensor HAL correctly handles the proximity sensor as a wake-up source.
-         Otherwise, the device may fail to wake out of suspend reliably.
-         The default is false. -->
-    <bool name="config_suspendWhenScreenOffDueToProximity">false</bool>
+    <!-- When config_perf_profile_prop is defined, this value MUST be the index of
+         one of the listes values in frameworks/base/core/res/res/values/cm_arrays.xml
+         for "perf_profile_values" array. Leave it blank if the device do not support
+         performance profiles  -->
+    <string name="config_perf_profile_default_entry" translatable="false">1</string>
 </resources>

@@ -27,8 +27,6 @@ LOCAL_CFLAGS += \
      -fno-short-enums \
      -D_ANDROID_
 
-LOCAL_CLANG := false
-
 LOCAL_LDFLAGS += -Wl,--export-dynamic
 
 ## Includes
@@ -53,6 +51,8 @@ LOCAL_COPY_HEADERS:= \
 LOCAL_MODULE := libgps.utils
 
 LOCAL_MODULE_TAGS := optional
+
+LOCAL_PRELINK_MODULE := false
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 include $(BUILD_SHARED_LIBRARY)

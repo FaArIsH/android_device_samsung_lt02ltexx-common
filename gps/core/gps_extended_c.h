@@ -35,7 +35,6 @@ extern "C" {
 
 #include <ctype.h>
 #include <stdbool.h>
-#include <string.h>
 #include "hardware/gps.h"
 
 /** Location has valid source information. */

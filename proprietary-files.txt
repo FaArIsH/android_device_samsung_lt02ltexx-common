@@ -3,6 +3,9 @@ bin/btnvtool
 bin/hci_qcomm_init
 lib/libbtnv.so
 
+# FM Radio
+bin/fm_qsoc_patches
+
 # Thermal
 bin/mpdecision
 bin/thermald
@@ -10,6 +13,13 @@ bin/thermald
 # Audio
 lib/libacdbloader.so
 lib/libaudcal.so
+
+# mmparser extended
+lib/libDivxDrm.so
+lib/libExtendedExtractor.so
+lib/libSHIMDivxDrm.so
+lib/libmmparser.so
+lib/libmmosal.so
 
 # Adreno GPU
 etc/firmware/a300_pfp.fw
@@ -141,13 +151,13 @@ lib/libqc-opt.so
 # DRM
 bin/insthk
 bin/qseecomd
+lib/libdrmdecrypt.so
 lib/libdrmfs.so
 lib/libdrmtime.so
 lib/libhdcp2.so
 lib/libQSEEComAPI.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libdrmdecrypt.so
 vendor/lib/libwvm.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libWVStreamControlAPI_L1.so
@@ -159,3 +169,7 @@ lib/libOmxEvrcDec.so
 lib/libOmxMux.so
 lib/libOmxQcelp13Dec.so
 lib/libOmxWmaDec.so
+
+# NFC firmware
+vendor/firmware/bcm2079xB4_firmware.ncd
+vendor/firmware/bcm2079xB4_pre_firmware.ncd

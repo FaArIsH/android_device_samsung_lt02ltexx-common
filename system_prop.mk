@@ -8,8 +8,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3="" \
+    ril.subscription.types=NV,RUIM \
     ro.telephony.ril_class=SerranoRIL \
-    ro.ril.telephony.mqanelements=6 \
     persist.radio.add_power_save=1
 
 # GPS
@@ -22,9 +31,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    audio.gapless.playback.disable=true \
     audio.offload.disable=1 \
+    mm.enable.qcom_parser=3310129 \
     mm.enable.smoothstreaming=true \
-    use.dedicated.device.for.voip=true \
+    persist.audio.fluence.mode=endfire \
+    persist.audio.vr.enable=false \
+    persist.audio.handset.mic=digital \
+    persist.audio.lowlatency.rec=false \
     qcom.hw.aac.encoder=true \
     media.aac_51_output_enabled=true
 
@@ -47,14 +61,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.chipname=MSM8930AB \
     ro.product_ship=true \
     ro.warmboot.capability=1 \
+    ro.vold.umsdirtyratio=50 \
+    ro.config.max_starting_bg=8 \
     persist.timed.enable=true \
     wifi.interface=wlan0 \
-    ro.qualcomm.bt.hci_transport=smd
+    ro.qualcomm.bt.hci_transport=smd \
+    persist.sys.isUsbOtgEnabled=true \
+    ro.sys.fw.dex2oat_thread_count=4
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false \
-    ro.sys.fw.dex2oat_thread_count=4

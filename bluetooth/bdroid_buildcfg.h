@@ -24,8 +24,9 @@
 #define BLUETOOTH_QTI_SW TRUE
 // Enables Interleave scan
 #define BTA_HOST_INTERLEAVE_SEARCH TRUE
-#define SC_MODE_INCLUDED FALSE
-#define HCI_RAW_CMD_INCLUDED FALSE
-#define SDP_DEBUG FALSE
-#define BTSNOOP_MEM FALSE
+// skips conn update at conn completion
+#define BTA_BLE_SKIP_CONN_UPD TRUE
+// Disables read remote device feature
+#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+#define MAX_L2CAP_CHANNELS 16
 #endif

@@ -130,7 +130,7 @@ EOF
 LOCAL_PATH := \$(call my-dir)
 
 ifeq (\$(BOARD_VENDOR),samsung)
-ifneq (\$(filter lt02ltespr lt02ltetmo lt02lteatt serranoltebmc \\
+ifneq (\$(filter lt02ltespr serranodsdd serranodsub serranoltebmc \\
                 serranoltespr serranolteusc serranoltexx,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
