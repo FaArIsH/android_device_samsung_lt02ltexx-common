@@ -36,7 +36,8 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
+# TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Reduce space taken by the journal
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
@@ -60,7 +61,7 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_FLASH_FROM_STORAGE := true
 TW_MAX_BRIGHTNESS := 255
 TW_THEME := landscape_mdpi
-#TARGET_RECOVERY_FSTAB := device/samsung/lt02ltespr/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/lt02ltespr/twrp.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 RECOVERY_TOUCHSCREEN_FLIP_Y := true
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
