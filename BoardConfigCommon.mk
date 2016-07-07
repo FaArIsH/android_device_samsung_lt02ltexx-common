@@ -62,6 +62,7 @@ TW_FLASH_FROM_STORAGE := true
 TW_MAX_BRIGHTNESS := 255
 TW_THEME := landscape_mdpi
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltespr/twrp.fstab
+TARGET_RECOVERY_INITRC := device/samsung/lt02ltexx-common/rootdir/init.twrp.rc
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.525313/leds/lcd-backlight/brightness
 TARGET_RECOVERY_QCOM_RTC_FIX := true
