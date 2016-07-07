@@ -36,7 +36,8 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
+#TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
+RECOVERY_VARIANT := twrp
 
 # Reduce space taken by the journal
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
