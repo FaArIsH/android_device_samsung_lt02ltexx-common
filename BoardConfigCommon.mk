@@ -36,8 +36,7 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
-# TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
 
 # Reduce space taken by the journal
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
@@ -50,21 +49,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5821660160
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
-
-# TWRP
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-DEVICE_RESOLUTION := 1024x600
-RECOVERY_SDCARD_ON_DATA := true
-BOARD_HAS_NO_REAL_SDCARD := true
-TW_NO_REBOOT_BOOTLOADER := true
-TW_HAS_DOWNLOAD_MODE := true
-TW_FLASH_FROM_STORAGE := true
-TW_MAX_BRIGHTNESS := 255
-TW_THEME := landscape_mdpi
-TARGET_RECOVERY_FSTAB := device/samsung/lt02ltespr/twrp.fstab
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
-TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.525313/leds/lcd-backlight/brightness
-TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt02ltexx-common/bluetooth
