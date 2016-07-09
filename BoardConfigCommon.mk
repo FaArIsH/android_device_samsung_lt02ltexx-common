@@ -35,6 +35,13 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+TARGET_GCC_VERSION_ARM := uber-4.9
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 4.9-uber
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
 
