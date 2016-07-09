@@ -61,7 +61,7 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN_PREFIX := androideabi-
 TARGET_GCC_VERSION_ARM := uber-4.9
 
 # Rom Toolchain
