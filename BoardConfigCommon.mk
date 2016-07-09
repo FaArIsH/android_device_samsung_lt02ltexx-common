@@ -35,6 +35,13 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# Optimizations
+CLANG_O3 := false
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
+
 # Kernel Toolchain
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 TARGET_GCC_VERSION_ARM := uber-4.9
