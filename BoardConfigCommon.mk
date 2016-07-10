@@ -61,7 +61,7 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-TARGET_GCC_VERSION_ARM := uber-4.9
+TARGET_GCC_VERSION_ARM := 4.9-uber
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9-uber
