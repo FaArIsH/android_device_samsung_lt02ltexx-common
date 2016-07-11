@@ -61,7 +61,8 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-TARGET_GCC_VERSION_ARM := 4.9-uber
+KERNEL_TOOLCHAIN := ~/rr/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9-uber
