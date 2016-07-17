@@ -103,9 +103,6 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
-    <!-- Enable doze powersaving -->		
-    <bool name="config_enableAutoPowerModes">true</bool>
-
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
@@ -305,15 +302,6 @@
          -->
     <bool name="config_enableHardwareFlpOverlay" translatable="false">false</bool>
 
-
-    <!-- If true, the direction rotation is applied to get to an application's requested
-         orientation is reversed.  Normally, the model is that landscape is
-         clockwise from portrait; thus on a portrait device an app requesting
-         landscape will cause a clockwise rotation, and on a landscape device an
-         app requesting portrait will cause a counter-clockwise rotation.  Setting
-         true here reverses that logic. -->
-    <bool name="config_reverseDefaultRotation">true</bool> 
-     
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 
