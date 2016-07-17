@@ -35,14 +35,37 @@ TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_SMP := true
+TARGET_CPU_VARIANT := krait
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+ARCH_ARM_HAVE_TLS_REGISTER := true
+
+# Krait optimizations
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_KRAIT_BIONIC_PLDOFFS := 10
+TARGET_KRAIT_BIONIC_PLDTHRESH := 10
+TARGET_KRAIT_BIONIC_BBTHRESH := 64
+TARGET_KRAIT_BIONIC_PLDSIZE := 64
+
 # Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-# KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin
-# KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Rom Toolchain
-# TARGET_GCC_VERSION_EXP := 4.9-uber
+TARGET_GCC_VERSION_EXP := 4.9-uber
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
