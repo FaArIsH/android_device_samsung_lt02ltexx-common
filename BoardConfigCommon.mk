@@ -65,6 +65,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt02ltexx-common/b
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += device/samsung/lt02ltexx-common/sepolicy
+
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
