@@ -247,7 +247,7 @@
 
     <!-- Flag indicating whether the RIL_REQUEST_SEND_SMS_EXPECT_MORE
          API should be used or not. The usage of the API is added
-         by CodeAurora and may not be supported by certain RIL.
+         by CodeAurora and may not be supported by certain RIL. -->
 
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
