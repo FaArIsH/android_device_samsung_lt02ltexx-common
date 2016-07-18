@@ -1,0 +1,167 @@
+# Bluetooth
+bin/btnvtool
+bin/hci_qcomm_init
+lib/libbtnv.so
+
+# Thermal
+bin/mpdecision
+bin/thermald
+
+# Audio
+lib/libacdbloader.so
+lib/libaudcal.so
+
+# mmparser extended
+lib/libDivxDrm.so
+lib/libExtendedExtractor.so
+lib/libSHIMDivxDrm.so
+lib/libmmparser.so
+lib/libmmosal.so
+
+# Adreno GPU
+etc/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/vidc_1080p.fw
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libGLESv2S3D_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libc2d2_a3xx.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-a3xx.so
+vendor/lib/libOpenCL.so
+vendor/lib/libOpenVG.so
+vendor/lib/libsc-a3xx.so
+
+# Graphics
+lib/libI420colorconvert.so
+lib/libmm-color-convertor.so
+
+# Radio
+bin/ds_fmc_appd
+bin/qmuxd
+bin/rild
+bin/rmt_storage
+etc/plmn_se13.bin
+lib/libcordon.so
+lib/libfactoryutil.so
+lib/libomission_avoidance.so
+lib/libril.so
+lib/libsec-ril.so
+lib/libsecnativefeature.so
+lib/libsecril-client.so
+lib/libxml.so
+vendor/lib/libconfigdb.so
+vendor/lib/libdiag.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib/libril-qcril-hook-oem.so
+
+# Network
+bin/radish
+
+# Time services
+-app/TimeService.apk
+bin/time_daemon
+-lib/libtime_genoff.so
+-lib/libTimeService.so
+
+# GPS
+bin/irsc_util
+lib/libloc_api_v02.so
+vendor/lib/libgeofence.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+vendor/lib/liblocationservice.so
+
+# Sensors
+bin/geomagneticd
+lib/hw/sensors.msm8960.so
+
+# Camera
+bin/mm-qcamera-daemon
+lib/hw/camera.vendor.msm8960.so
+lib/libadsprpc.so
+lib/libchromatix_imx175_antishake.so
+lib/libchromatix_imx175_default_video.so
+lib/libchromatix_imx175_lls.so
+lib/libchromatix_imx175_preview.so
+lib/libchromatix_imx175_zsl.so
+lib/libchromatix_imx175_zsl_drama.so
+lib/libchromatix_imx175_zsl_panorama.so
+lib/libchromatix_s5k3h5xa_antishake.so
+lib/libchromatix_s5k3h5xa_default_video.so
+lib/libchromatix_s5k3h5xa_lls.so
+lib/libchromatix_s5k3h5xa_preview.so
+lib/libchromatix_s5k3h5xa_zsl.so
+lib/libchromatix_s5k3h5xa_zsl_drama.so
+lib/libchromatix_s5k3h5xa_zsl_panorama.so
+lib/libchromatix_s5k6a3yx_default_video.so
+lib/libchromatix_s5k6a3yx_preview.so
+lib/libchromatix_s5k6a3yx_smart_stay.so
+lib/libchromatix_s5k6a3yx_vt.so
+lib/libchromatix_s5k6a3yx_vt_hd.so
+lib/libgemini.so
+lib/libimage-jpeg-dec-omx-comp.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libmercury.so
+lib/libmmcamera_faceproc.so
+lib/libmmcamera_frameproc.so
+lib/libmmcamera_hdr_lib.so
+lib/libmmcamera_image_stab.so
+lib/libmmcamera_interface.so
+lib/libmmcamera_interface2.so
+lib/libmmcamera_plugin.so
+lib/libmmcamera_statsproc31.so
+lib/libmmcamera_wavelet_lib.so
+lib/libmmjpeg.so
+lib/libmmjpeg_interface.so
+lib/libmmmpod.so
+lib/libmmstillomx.so
+lib/liboemcamera.so
+lib/libsensor1.so
+lib/libTsAccm.so
+lib/libTsAwb.so
+
+# Perf
+lib/libqc-opt.so
+
+# DRM
+bin/insthk
+bin/qseecomd
+lib/drm/libdrmwvmplugin.so
+lib/libdrmdecrypt.so
+lib/libdrmfs.so
+lib/libdrmtime.so
+lib/libhdcp2.so
+lib/libQSEEComAPI.so
+lib/libwvm.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libWVStreamControlAPI_L3.so
+
+# Media
+lib/libOmxAacDec.so
+lib/libOmxAmrwbplusDec.so
+lib/libOmxEvrcDec.so
+lib/libOmxMux.so
+lib/libOmxQcelp13Dec.so
+lib/libOmxWmaDec.so
+
+# NFC firmware
+vendor/firmware/bcm2079xB4_firmware.ncd
+vendor/firmware/bcm2079xB4_pre_firmware.ncd
