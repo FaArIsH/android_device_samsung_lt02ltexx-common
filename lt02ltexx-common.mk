@@ -84,8 +84,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
 # Eleven
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/Eleven.apk:system/app/Eleven/Eleven.apk
+# PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/prebuilt/Eleven.apk:system/app/Eleven/Eleven.apk
 
 # GPS/location security configuration file
 PRODUCT_COPY_FILES += \
