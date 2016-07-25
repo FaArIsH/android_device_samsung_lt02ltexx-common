@@ -137,6 +137,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Gello
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-flags=--no-watch-dog
+
 PRODUCT_CHARACTERISTICS := tablet
 
 # call common lt02ltexx system props
