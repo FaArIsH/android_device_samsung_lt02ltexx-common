@@ -28,6 +28,9 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 TARGET_SCREEN_HEIGHT := 1024
 TARGET_SCREEN_WIDTH := 600
 
+# No flashlight, no Torch app
+TARGET_HAS_CAM_FLASH := false
+
 # Genlock is needed for camera blob
 PRODUCT_PACKAGES += \
     libgenlock
@@ -134,6 +137,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Gello
 
+PRODUCT_CHARACTERISTICS := tablet
+
 # call common lt02ltexx system props
 $(call inherit-product, device/samsung/lt02ltexx-common/system_prop.mk)
 
@@ -141,4 +146,4 @@ $(call inherit-product, device/samsung/lt02ltexx-common/system_prop.mk)
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
 # call dalvik heap config
-$(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
