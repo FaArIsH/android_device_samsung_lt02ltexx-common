@@ -26,13 +26,15 @@
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/lt02ltexx-common/include
 
 # Kernel
-BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom user_debug=22 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
-BOARD_KERNEL_BASE            := 0x80200000
-BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
-BOARD_KERNEL_PAGESIZE        := 2048
-TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
-TARGET_KERNEL_CONFIG         := cyanogen_lt02ltexx_defconfig
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=22 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_BASE := 0x80200000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
+BOARD_KERNEL_PAGESIZE := 2048
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8930-common
+TARGET_KERNEL_HAVE_EXFAT := true
+TARGET_KERNEL_CONFIG := cyanogen_lt02ltexx_defconfig
 
+# Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -70,14 +72,13 @@ TARGET_GCC_VERSION_EXP := 4.9-uber
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt02ltexx-common/rootdir/fstab.qcom
 
-# Reduce space taken by the journal
-BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
-
+# Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
+BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5821660160
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
